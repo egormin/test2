@@ -1,0 +1,7 @@
+node {
+    withDockerContainer('jenkins-build_agent') {
+        stage ("Change Environment") {
+            sh 'git --version'
+        }
+    }
+}
