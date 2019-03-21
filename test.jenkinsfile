@@ -4,5 +4,9 @@ node {
             sh 'git --version'
             git branch: 'test', url: 'https://github.com/egormin/java_learning.git'
         }
+        stage ("Second") {
+            sh 'git --version'
+            sleep 30
+        }
     }
 }
